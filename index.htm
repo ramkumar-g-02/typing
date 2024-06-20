@@ -18,21 +18,31 @@
     .red {
         color: #d5122c;
     }
+    .current-key {
+        border-radius: 3px;
+        border: 0px solid grey;
+        padding: 4px 4px;
+        background-color: #0ec4e1;
+    }
 </style>
 
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100 vw-100">
         <div class="card w-50 h-50">
             <div class="card-body">
-                <h5 class="card-title text-center">Type</h5>
+                <h5 class="card-title text-center">Hello World</h5>
                 <form action="">
                     <div class="row justify-content-center">
                         <div class="col-4">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">Size</span>
-                                <input type="number" class="form-control" min="1" max="100" id="size" placeholder="Size" aria-label="size"
-                                    aria-describedby="basic-addon1">
+                                <input type="number" class="form-control" min="1" max="100" id="size" placeholder="Size"
+                                    aria-label="size" aria-describedby="basic-addon1">
                             </div>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select" aria-label="Default select example" id="keyType">
+                            </select>
                         </div>
                     </div>
                     <input type="hidden" name="randomCharaters" id="randomCharaters">
@@ -45,8 +55,7 @@
                 <div class="row mt-5 justify-content-center">
                     <div class="col-8">
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here"
-                                id="typing"></textarea>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="typing"></textarea>
                             <label for="floatingTextarea">Type</label>
                         </div>
                     </div>
